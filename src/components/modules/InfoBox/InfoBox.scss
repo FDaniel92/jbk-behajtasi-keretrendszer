@@ -1,0 +1,70 @@
+@import "./src/assets/styles/template/variables/_variables.scss";
+.infobox {
+    padding: 20px 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    background: $color-1;
+    text-align: center;
+    display: flex;
+    position: relative;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    font-family: $source-sans;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+
+    @media (min-width: $lg-devices) {
+      width: 370px;
+      height: 460px;
+      left: 0;
+      transform: none;
+      padding: 50px 30px;
+    }
+
+    &:nth-child(even) {
+      @media (min-width: $lg-devices) {
+        margin: 0 30px;
+      }
+    }
+
+    &.without-btn {
+      height: 420px;
+    }
+
+    &__image {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+
+        @media (min-width: $lg-devices) {
+          width: 120px;
+          height: 120px;
+          margin: 0 auto;
+        }
+    }
+    h2 {
+     font-family: $play-fair;
+     font-size: $infobox-title-size;
+     margin-bottom: 20px;
+     color: $color-2;
+    }
+    p {
+     font-size: 18px;
+     margin-bottom: auto;
+    }
+    a {
+      background: $color-2;
+      padding: 8px 0;
+      font-size: 16px;
+      border-radius: 20px;
+      letter-spacing: 2.16px;
+      width: 170px;
+      color: $color-1;
+      text-transform: uppercase;
+    }
+}

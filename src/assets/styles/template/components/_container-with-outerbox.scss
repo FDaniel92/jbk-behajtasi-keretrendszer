@@ -1,0 +1,10 @@
+@import "./src/assets/styles/template/variables/_variables.scss";
+.container-outerbox {
+    width: 100%;
+    margin: 150px 0 50px 0;
+    background: $color-3;
+    position: relative;
+    .infobox {
+        top: -50px;
+    }
+}

@@ -1,0 +1,48 @@
+@import "./src/assets/styles/template/variables/_variables.scss";
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    @media (min-width: $xl-devices) {
+        width: 1170px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .main-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto 70px 0;
+    }
+}
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.justify-centered {
+    justify-content: center;
+}
+.sm-column {
+    @media (max-width: $md-devices) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.md-column {
+    @media (max-width: $lg-devices) {
+        display: flex;
+        flex-direction: column;
+    }
+}

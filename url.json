@@ -1,0 +1,14 @@
+{
+    "development": {
+        "backend": "http://192.168.88.85:8001",
+        "frontend": "http://tst-jbk.ejogseged.intra"
+    },
+    "staging": {
+        "backend": "/",
+        "frontend": "http://tst-jbk.ejogseged.intra"
+    },
+    "production": {
+        "backend": "/",
+        "frontend": "https://jbk.hu"
+    }
+}
